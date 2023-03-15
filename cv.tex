@@ -1,16 +1,18 @@
 \documentclass[a4,11pt]{article}
 \usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
 \bibliography{papers}
-% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
 % https://en.wikibooks.org/wiki/LaTeX/Colors
 \def\theme{OliveGreen}
 
 \usepackage{simplecv}
-\boldname{Surname}{Name}{N.}
 
 \begin{document}
 
 \headinginline{Tomasz Nowak}{
+	test\\
+	test\\
+	test\\
+	}{
     Website: \website{tonowak.com} \\ 
     Email: \email{tomasz.nowak@tonowak.com} \\
     Phone: +48 507 228 642 \\
@@ -20,45 +22,41 @@
 
 \section{Experience}
 \outerlist{
-	\entrybig
-	{\textbf{Jane Street -- Software Developer Internship}}{London}
-	{TODO: write something here}{Summer 2022}
-	\entrybig
-	{\textbf{Jane Street -- Software Developer Internship}}{London}
-	{TODO: write something here}{Summer 2023}
+	\entry{\textbf{Jane Street -- Software Developer Internship} \hfill London}
+	\innerlist {
+		\entry{Summer 2023: soon}
+		\entry{Summer 2022: TODO -- describe the impact of the internship}
+	}
 }
 
 \section{Education}
 \outerlist{
 	\entrybig
 	{\textbf{University of Warsaw}}{}
-	{B.S. in Computer Science, currently GPA 3.930 / 4.000}{2020\textendash 2023}
+	{B.S. in Computer Science, currently \textbf{GPA 3.93 / 4.00}}{2020\textendash 2023}
 	\innerlist{
 		\entry{WIP Thesis: ``Accelerating package expansion in Rust through development of a semantic versioning tool''}
+		\entry{TODO -- describe the impact of the thesis}
 	}
 }
 
 \section{Competitions (sports programming)}
 \denseouterlist{
-	\entry{\textbf{finalist (hopefully medalist) of ICPC World Finals 2022} \hfill 2022\textendash 2023}
-	\entry{\textbf{runner-up of CERC 2022} (ICPC Central Europe Regional Contest) \hfill 2022\textendash 2023}
-	\entry{\textbf{medalist of CERC 2021} (ICPC Central Europe Regional Contest) \hfill 2021\textendash 2022}
-	\entry{\textbf{medalist of CERC 2020} (ICPC Central Europe Regional Contest) \hfill 2020\textendash 2021}
-	\entry{\textbf{winner of CEOI 2020} (Central European Olympiad of Informatics) \hfill 2020\fillyear{\textendash 2020}}
-	\entry{\textbf{medalist of IOI 2020} (International Olympiad in Informatics) \hfill 2020\fillyear{\textendash 2020}}
-	\entry{\textbf{winner of POI 2020} (Polish Olympiad in Informatics' selection camp for IOI) \hfill 2019\textendash 2020}
-	\entry{laureate of POI 2019 and finalist of POI 2018 \hfill 2017\textendash 2019}
-	\entry{finalist of POM 2020 and POM 2019 (Polish Olympiad in Mathematics) \hfill 2018\textendash 2020}
-	\entry{finalist of PA 2020 and PA 2019 (Algorithmic Engagements / Potyczki Algorytmiczne, open competition in Poland) \hfill 2018\textendash 2020}
+	\entry{ICPC World Finals: \textbf{finalist of ICPC WF 2022} (which will happen in November 2023).}
+	\entry{ICPC Central Europe Regional Contest: \textbf{golden medalist of CERC 2022, medalist of CERC 2021 and 2020}.}
+	\entry{Central European Olympiad in Informatics: \textbf{winner of CEOI 2020}.}
+	\entry{International Olympiad in Informatics: \textbf{medalist of IOI 2020}.}
+	\entry{Polish Olympiad in Informatics: \textbf{winner of POI 2020}, medalist of POI 2019, finalist of POI 2018.}
+	\entry{Polish Olympiad in Mathematics: finalist of POM 2020 and POM 2019.}
+	% \entry{finalist of PA 2020 and PA 2019 (Algorithmic Engagements / Potyczki Algorytmiczne, open competition in Poland) \hfill 2018\textendash 2020}
 }
 
 \section{Organization of competitions}
 \denseouterlist{
-	\entry{Team leader/deputy leader of the Polish national team in IOI 2021, CEOI 2021, BOI 2021, BOI 2022\hfill 2021 \textendash Current}
-	\entry{Vicechair of the Jury at the Regional Stage and the Finals of the Polish Olympiad in Informatics \hfill 2023 \textendash Current}
-	\entry{Member of the Jury of the Polish Olympiad in Informatics and Junior Olympiad in Informatics, member of Polish Olympiad in Informatics' Task Commision \hfill 2020 \textendash Current}
-	\entry{Each year organizing one or two algorithmic camps for high school students to prepare them \newline 
-		for major competitions. \hfill 2018 \textendash Current}
+	\entry{Vicechair of the Jury at the Finals and the Regional Stage of the Polish Olympiad in Informatics (2023 -- Current).}
+	\entry{Member of the Jury of the Polish Olympiad in Informatics and Junior Olympiad in Informatics, member of Polish Olympiad in Informatics' Task Commision (2020 -- Current).}
+	\entry{Team leader/deputy leader of the Polish national team in IOI 2021, CEOI 2021, BOI 2021, BOI 2022.}
+	\entry{Each year organizing one or two algorithmic camps for high school students to prepare them for major competitions.}
 }
 
 \sidebyside{
