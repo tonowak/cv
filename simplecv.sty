@@ -62,16 +62,20 @@
 \newenvironment*{dummyenv}{}{}
 
 % Inline heading
-\newcommand{\headinginline}[2]{
-    \begin{minipage}[t]{0.60\textwidth}
-    \vspace*{\fill}
+\newcommand{\headinginline}[3]{
+    \begin{minipage}[t]{0.32\textwidth}
+    \vspace{0mm}
     \Huge \textcolor{color-title}{#1}
     \end{minipage}
     \begin{minipage}[t]{0.35\textwidth}
-    \begin{flushright}
-    #2
-    \end{flushright}
+    \vspace{0mm}
+		#2
     \end{minipage}
+    \begin{minipage}[t]{0.30\textwidth}
+    \vspace{0mm}
+		#3
+    \end{minipage}
+    \vspace{-\bigskipamount}
 }
 % Photo heading
 \newcommand{\headingphoto}[3]{
