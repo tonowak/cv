@@ -1,4 +1,5 @@
-\documentclass[a4,11pt]{article}
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1mm]{geometry}
 \usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
 \bibliography{papers}
 % https://en.wikibooks.org/wiki/LaTeX/Colors
@@ -52,12 +53,11 @@
 \outerlist{
 	\entrybig
 	{University of Warsaw}{}
-	{\textbf{Bachelor's degree} in Computer Science, \textbf{GPA 4.95 / 5.00}}{2020\textendash 2023}
+	{\textbf{Bachelor's degree} in Computer Science, \textbf{GPA 4.95 / 5.00.}}{2020\textendash 2023}
 	\innerlist{
 		\entry{One of the \textbf{2 students out of around 160}
 			to receive an ,,Exceptional 5!'' final grade.}
-		\entry{Thesis
-		\href{https://arxiv.org/abs/2308.14623}{(link here)}:
+		\entry{\link{https://arxiv.org/abs/2308.14623}{Thesis}:
 		``Accelerating package expansion in Rust through development of a semantic versioning tool''.
 
 		\textbf{Wrote a blog post} (link soon) describing the important results of the thesis.
@@ -68,7 +68,12 @@
 
 	\entrybig
 	{University of Warsaw}{}
-	{\textbf{Master's degree} in Computer Science, work in progress}{2023\textendash 2025}
+	{\textbf{Master's degree} in Computer Science, work in progress.}{2023\textendash 2025}
+	\innerlist{
+		\entry{\textbf{Teaching:} I'm conducting classes in \textit{Text algorithms}
+		(one of the additional classes that bachelor's and master's students have to choose from)
+		while still being a student.}
+	}
 }
 
 \section{Competitions (sports programming)}
@@ -87,13 +92,12 @@
 	\entry{\textbf{Vicechair of the Jury} of the Polish Olympiad in Informatics (2023 -- 2025).}
 	\entry{Member of the Jury of the Polish Olympiad in Informatics and Junior Olympiad in Informatics, member of Polish Olympiad in Informatics' Task Commision (2020 -- Current).}
 	\entry{Team leader/deputy leader of the Polish national team in IOI 2021, CEOI 2021, BOI 2021, BOI 2022, BOI 2023.}
-	\entry{Each year organizing one or two algorithmic camps for high school students to prepare them for major competitions.}
+	\entry{Each year organizing one or two algorithmic camps for high school students to prepare them for competitions.}
 }
 
 \sidebyside{
 	\section{Languages}
-	English and Polish -- full professional proficiency,
-	French -- limited working proficiency.
+	English, Polish, French
 }{
 	\section{Programming languages}
 	Rust, C++, OCaml, Python, C, Java, Haskell

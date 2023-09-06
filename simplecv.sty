@@ -8,19 +8,10 @@
 \usepackage{multicol}                       % Multiple columns
 \usepackage[usenames,dvipsnames]{xcolor}    % Coloring
 \usepackage{enumitem}                       % List customization
-\usepackage{lastpage}                       % Page numbering
 \usepackage{fancyhdr}                       % Footers
-\usepackage[russian,english]{babel}         % Language styles
+\usepackage[english]{babel}                 % Language styles
 \usepackage{graphicx}                       % Importing graphics
 \usepackage[export]{adjustbox}              % Aligning margins
-
-% % Chinese
-% \usepackage{xeCJK}
-% \setCJKmainfont{BabelStone Han}
-
-% % Cyrillic/Russian
-% \usepackage{hyphenat}
-% \babelfont{rm}{Droid Sans}
 
 % Styling
 \pagestyle{fancy}
@@ -37,8 +28,8 @@
 \MakeOuterQuote{"}
 
 % Hyperlinks
-% \newcommand{\link}[2]{\href{#1}{\underline{\smash{#2}}}}
-\newcommand{\link}[2]{\href{#1}{#2}}
+\newcommand{\link}[2]{\href{#1}{\underline{\smash{#2}}}}
+% \newcommand{\link}[2]{\href{#1}{#2}}
 
 % Define colors
 \definecolor{color-text}{gray}{0.10}    % light black
@@ -105,9 +96,6 @@
 \titleformat{\section}{
     \scshape\raggedright\Large\color{color-title}}{}{0em}{}[\color{color-title}\titlerule
     \vspace{-\smallskipamount}]
-
-% Footer
-\fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 
 % Lists
 \newcommand{\outerlist}[1]{
