@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage[a4paper,margin=1mm]{geometry}
+\usepackage[a4paper,margin=3em]{geometry}
 \usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
 \bibliography{papers}
 % https://en.wikibooks.org/wiki/LaTeX/Colors
@@ -29,12 +29,15 @@
 				for determining risks and benefits of holding a bond.
 		}
 		\entry{\textbf{2023, second project:}
-				made OCaml work with gdb/lldb;
+				made the OCaml language work with gdb/lldb debuggers:
 				extended the OCaml compiler with debug
-				info of variable types
-				and implemented support for OCaml
-				and its variant types in lldb
-				(a part of the llvm project).
+				info of variable types,
+				implemented support for variant types
+				and for OCaml in lldb.
+				Before that, it was not possible to print
+				the contents of OCaml variables in the debugger.
+				Code is open source \link{https://github.com/ocaml-flambda/flambda-backend/compare/main...tonowak:flambda-backend:dwarf-bool}{here}
+				and \link{https://github.com/ocaml-flambda/llvm-project/compare/main...tonowak:llvm-project:add-variant-support}{here}.
 		}
 		\entry{\textbf{2022, first project:}
 				extended a company product for their clients
@@ -57,29 +60,33 @@
 	\innerlist{
 		\entry{One of the \textbf{2 students out of around 160}
 			to receive an ,,Exceptional 5!'' final grade.}
-		\entry{\link{https://arxiv.org/abs/2308.14623}{Thesis}:
-		``Accelerating package expansion in Rust through development of a semantic versioning tool''.
 
-		\textbf{Wrote a blog post} (link soon) describing the important results of the thesis.
+		\entry{\link{https://arxiv.org/abs/2308.14623}{My thesis} is about extending a linter for the Rust language
+			that detects semantic versioning violations.
 
-		My code in this project is now used by companies like \textbf{Microsoft, Amazon, Mozilla and Adobe},
-		and by some of the biggest Rust libraries.}
+			The thesis has made it to the finals of a Polish competition for Computer Science bachelor's theses.
+
+			\textbf{Wrote a \link{https://predr.ag/blog/semver-violations-are-common-better-tooling-is-the-answer/}{blog post}} describing the important results of the thesis.
+			Highly upvoted on \link{https://www.reddit.com/r/rust/comments/16cj1mo/semver_violations_are_common_better_tooling_is/}{reddit.com/r/rust}.
+
+			My code in this project is now used by companies like \textbf{Microsoft, Amazon, Mozilla and Adobe},
+			and by some of the biggest Rust libraries.}
 	}
 
 	\entrybig
 	{University of Warsaw}{}
 	{\textbf{Master's degree} in Computer Science, work in progress.}{2023\textendash 2025}
 	\innerlist{
-		\entry{\textbf{Teaching:} I'm conducting classes in \textit{Text algorithms}
-		(one of the additional classes that bachelor's and master's students have to choose from)
-		while still being a student.}
+		\entry{\textbf{Teaching:} I'm conducting classes in \textit{Text algorithms}.
+			Got this unique offer while still being a bachelor's student.
+		}
 	}
 }
 
 \section{Competitions (sports programming)}
 \denseouterlist{
 	\entry{ICPC World Finals: \textbf{finalist of ICPC WF 2022} (which will happen in November 2023).}
-	\entry{ICPC Central Europe Regional Contest: \textbf{golden medalist of CERC 2022, medalist of CERC 2021 and 2020}.}
+	\entry{ICPC Central Europe Regional Contest: \textbf{golden medalist of CERC 2022, medalist of CERC 2021, 2020}.}
 	\entry{Central European Olympiad in Informatics: \textbf{winner of CEOI 2020}.}
 	\entry{International Olympiad in Informatics: \textbf{medalist of IOI 2020}.}
 	\entry{Polish Olympiad in Informatics: \textbf{winner of POI 2020}, medalist of POI 2019, finalist of POI 2018.}
@@ -89,7 +96,14 @@
 
 \section{Organization of competitions}
 \denseouterlist{
-	\entry{\textbf{Vicechair of the Jury} of the Polish Olympiad in Informatics (2023 -- 2025).}
+	\entry{\textbf{Vicechair of the Jury} of the Polish Olympiad in Informatics (2023 -- 2025).
+		\innerlist{
+			\entry{introduced multiple minor and major changes to the preparations of the competition,}
+			\entry{initialized the creation of a \link{https://github.com/sio2project/sinol-make}{tool for task preparation}
+				and mentored a student during its implementation through code review and guidance in decisions.}
+			\entry{overseeing the competitions and making the main decisions in case of problems.} 
+		}
+	}
 	\entry{Member of the Jury of the Polish Olympiad in Informatics and Junior Olympiad in Informatics, member of Polish Olympiad in Informatics' Task Commision (2020 -- Current).}
 	\entry{Team leader/deputy leader of the Polish national team in IOI 2021, CEOI 2021, BOI 2021, BOI 2022, BOI 2023.}
 	\entry{Each year organizing one or two algorithmic camps for high school students to prepare them for competitions.}
